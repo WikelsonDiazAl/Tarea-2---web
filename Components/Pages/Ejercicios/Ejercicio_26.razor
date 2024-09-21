@@ -1,0 +1,45 @@
+@page "/Ejercicio_26"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h3>Ejercicio 26</h3>
+
+<div class="form-group">
+    <label for="numeros">Introduce 10 números separados por comas</label>
+    <input type="text" class="form-control" id="numeros" @bind="inputNumeros" placeholder="Ejemplo: 1,2,3,4,5,6,7,8,9,10" />
+</div>
+
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="EncontrarMayor">Encontrar Mayor</button>
+</div>
+
+<p>Mayor número: @mayorNumero</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private string inputNumeros;
+    private int mayorNumero = 0;
+
+    private void EncontrarMayor()
+    {
+        int[] vector = inputNumeros.Split(',').Select(int.Parse).ToArray();
+
+        if (vector.Length == 10)
+        {
+            mayorNumero = EncontrarMayorEnVector(vector);
+        }
+        else
+        {
+            mayorNumero = 0;
+        }
+    }
+
+    private int EncontrarMayorEnVector(int[] vector)
+    {
+        return vector.Max();
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

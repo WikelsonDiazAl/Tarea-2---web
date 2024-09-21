@@ -1,0 +1,150 @@
+@page "/Ejercicio_44"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+
+<div class="container">
+    <h3>Ejercicio 44</h3>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento00">Elemento [0,0]</label>
+                <input type="number" class="form-control" id="elemento00" @bind="matriz[0, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento01">Elemento [0,1]</label>
+                <input type="number" class="form-control" id="elemento01" @bind="matriz[0, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento02">Elemento [0,2]</label>
+                <input type="number" class="form-control" id="elemento02" @bind="matriz[0, 2]" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento10">Elemento [1,0]</label>
+                <input type="number" class="form-control" id="elemento10" @bind="matriz[1, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento11">Elemento [1,1]</label>
+                <input type="number" class="form-control" id="elemento11" @bind="matriz[1, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento12">Elemento [1,2]</label>
+                <input type="number" class="form-control" id="elemento12" @bind="matriz[1, 2]" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento20">Elemento [2,0]</label>
+                <input type="number" class="form-control" id="elemento20" @bind="matriz[2, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento21">Elemento [2,1]</label>
+                <input type="number" class="form-control" id="elemento21" @bind="matriz[2, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento22">Elemento [2,2]</label>
+                <input type="number" class="form-control" id="elemento22" @bind="matriz[2, 2]" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento30">Elemento [3,0]</label>
+                <input type="number" class="form-control" id="elemento30" @bind="matriz[3, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento31">Elemento [3,1]</label>
+                <input type="number" class="form-control" id="elemento31" @bind="matriz[3, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento32">Elemento [3,2]</label>
+                <input type="number" class="form-control" id="elemento32" @bind="matriz[3, 2]" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" @onclick="@ContarRepeticionesMayorPrimo">Buscar Fila del Mayor Dato</button>
+    </div>
+
+    <p>@resultado</p>
+    <button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+</div>
+
+@code {
+    private int[,] matriz = new int[4, 3];
+    private string resultado;
+
+    private void ContarRepeticionesMayorPrimo()
+    {
+        int mayorPrimo = -1;
+        int cantidadRepeticiones = 0;
+
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (EsPrimo(matriz[i, j]))
+                {
+                    if (matriz[i, j] > mayorPrimo)
+                    {
+                        mayorPrimo = matriz[i, j];
+                        cantidadRepeticiones = 1; // Reiniciar conteo
+                    }
+                    else if (matriz[i, j] == mayorPrimo)
+                    {
+                        cantidadRepeticiones++;
+                    }
+                }
+            }
+        }
+
+        if (mayorPrimo == -1)
+        {
+            resultado = "No hay números primos en la matriz.";
+        }
+        else
+        {
+            resultado = $"El mayor número primo es {mayorPrimo} y se repite {cantidadRepeticiones} vez/veces.";
+        }
+    }
+
+    private bool EsPrimo(int numero)
+    {
+        if (numero < 2) return false;
+        for (int i = 2; i <= Math.Sqrt(numero); i++)
+        {
+            if (numero % i == 0) return false;
+        }
+        return true;
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}
+
+

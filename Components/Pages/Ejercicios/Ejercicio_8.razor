@@ -1,0 +1,41 @@
+@page "/Ejercicio_8"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+@using System.Collections.Generic
+
+<h3>Ejercicio 8</h3>
+<p>Ingrea un número:</p>
+
+<input type="number" @bind="numero" placeholder="Ingresa un número" />
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="VerificarFibonacci">Verificar</button>
+    <p>Resultado: @resultado</p>
+    <button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+</div>
+
+
+
+@code {
+    private int numero;
+    private int resultado;
+
+    private void VerificarFibonacci()
+    {
+        var fibonacciSeries = GenerarFibonacci(30);
+        resultado = fibonacciSeries.Contains(numero) ? 1 : 0; // Uso "?" para simplificar el codigo
+    }
+
+    private List<int> GenerarFibonacci(int count)
+    {
+        var fibSeries = new List<int> { 0, 1 };
+        for (int i = 2; i < count; i++)
+        {
+            fibSeries.Add(fibSeries[i - 1] + fibSeries[i - 2]);
+        }
+        return fibSeries;
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

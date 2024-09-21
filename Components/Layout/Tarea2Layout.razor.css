@@ -1,0 +1,67 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: center; 
+    padding: 20px 0; 
+    margin-bottom: 20px; 
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+#divMain {
+    width: 80%;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    color: #333; 
+    line-height: 1.6; 
+    margin-top: 20px; 
+}
+
+
+
+.Linkinv{
+    color: #000;
+    text-decoration: none
+}
+
+#divMain {
+    border: 5px solid; 
+    animation: cambiarBordes 3s infinite; 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 15px; 
+}
+
+@keyframes cambiarBordes {
+    0% {
+        border-color: red; 
+    }
+    25% {
+        border-color: blue; 
+    }
+    50% {
+        border-color: green; 
+    }
+    75% {
+        border-color: yellow; 
+    }
+    100% {
+        border-color: red; 
+    }
+}
+

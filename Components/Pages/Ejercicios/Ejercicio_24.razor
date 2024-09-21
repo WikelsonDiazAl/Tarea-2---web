@@ -1,0 +1,49 @@
+@page "/Ejercicio_24"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h3>Ejercicio 24</h3>
+
+<div class="form-group">
+    <label for="num1">Primer número (2 dígitos)</label>
+    <input type="number" class="form-control" id="num1" @bind="numero1" />
+</div>
+
+<div class="form-group">
+    <label for="num2">Segundo número (2 dígitos)</label>
+    <input type="number" class="form-control" id="num2" @bind="numero2" />
+</div>
+
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="VerificarInversos">Verificar</button>
+</div>
+
+<p>Resultado: @resultado</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private int numero1 = 0;
+    private int numero2 = 0;
+    private int resultado = 0;
+
+    private void VerificarInversos()
+    {
+        resultado = SonInversos(numero1, numero2);
+    }
+
+    private int SonInversos(int num1, int num2)
+    {
+        if (num1 < 10 || num1 > 99 || num2 < 10 || num2 > 99)
+        {
+            return 0;
+        }
+
+        int invertido = (num1 % 10) * 10 + (num1 / 10);
+
+        return invertido == num2 ? 1 : 0;
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

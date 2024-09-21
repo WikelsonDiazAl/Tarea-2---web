@@ -1,0 +1,50 @@
+@page "/Ejercicio_18"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h2>Ejercicio 18</h2>
+<p>Construir una función que reciba como parámetro un valor entero y retorne 1 si dicho valor es el factorial de alguno de los dígitos del número, y 0 si no.</p>
+
+<input type="number" @bind="numero" placeholder="Ingresa un número" />
+<button class="btn btn-primary" @onclick="VerificarFactorial">Verificar</button>
+<p>Resultado: @resultado</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private int numero;
+    private int resultado;
+
+    private void VerificarFactorial()
+    {
+        resultado = EsFactorialDeDigitos(numero);
+    }
+
+    private int EsFactorialDeDigitos(int valor)
+    {
+        for (int i = 0; i <= 9; i++)
+        {
+            if (CalcularFactorial(i) == valor)
+            {
+                return 1;
+            }
+        }
+        return 0; 
+    }
+
+    private int CalcularFactorial(int n)
+    {
+        if (n == 0 || n == 1)
+            return 1;
+        
+        int factorial = 1;
+        for (int i = 2; i <= n; i++)
+        {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
+     private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

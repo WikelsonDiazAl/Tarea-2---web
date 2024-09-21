@@ -1,0 +1,47 @@
+@page "/Ejercicio_20"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h3>Ejercicio 20</h3>
+
+<div class="form-group">
+    <label for="txtnumero">Número</label>
+    <input type="number" class="form-control" id="txtnumero" @bind="numero" />
+</div>
+
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="VerificarDigitosIguales">Verificar</button>
+</div>
+
+<p>Resultado: @resultado</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private int numero = 0;
+    private int resultado = 0;
+
+    private void VerificarDigitosIguales()
+    {
+        resultado = TodosDigitosIguales(numero);
+    }
+
+    private int TodosDigitosIguales(int num)
+    {
+        
+        string numeroStr = num.ToString();
+
+        char primerDigito = numeroStr[0];
+        foreach (char digito in numeroStr)
+        {
+            if (digito != primerDigito)
+            {
+                return 0; 
+            }
+        }
+        return 1; 
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

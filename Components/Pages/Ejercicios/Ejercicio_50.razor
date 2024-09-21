@@ -1,0 +1,227 @@
+@page "/Ejercicio_50"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<div class="container">
+    <h3>Ejercicio 50</h3>
+
+    <!-- Fila 0 -->
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento00">Elemento [0,0]</label>
+                <input type="number" class="form-control" id="elemento00" @bind="matriz[0, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento01">Elemento [0,1]</label>
+                <input type="number" class="form-control" id="elemento01" @bind="matriz[0, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento02">Elemento [0,2]</label>
+                <input type="number" class="form-control" id="elemento02" @bind="matriz[0, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento03">Elemento [0,3]</label>
+                <input type="number" class="form-control" id="elemento03" @bind="matriz[0, 3]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento04">Elemento [0,4]</label>
+                <input type="number" class="form-control" id="elemento04" @bind="matriz[0, 4]" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 1 -->
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento10">Elemento [1,0]</label>
+                <input type="number" class="form-control" id="elemento10" @bind="matriz[1, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento11">Elemento [1,1]</label>
+                <input type="number" class="form-control" id="elemento11" @bind="matriz[1, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento12">Elemento [1,2]</label>
+                <input type="number" class="form-control" id="elemento12" @bind="matriz[1, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento13">Elemento [1,3]</label>
+                <input type="number" class="form-control" id="elemento13" @bind="matriz[1, 3]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento14">Elemento [1,4]</label>
+                <input type="number" class="form-control" id="elemento14" @bind="matriz[1, 4]" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento20">Elemento [2,0]</label>
+                <input type="number" class="form-control" id="elemento20" @bind="matriz[2, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento21">Elemento [2,1]</label>
+                <input type="number" class="form-control" id="elemento21" @bind="matriz[2, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento22">Elemento [2,2]</label>
+                <input type="number" class="form-control" id="elemento22" @bind="matriz[2, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento23">Elemento [2,3]</label>
+                <input type="number" class="form-control" id="elemento23" @bind="matriz[2, 3]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento24">Elemento [2,4]</label>
+                <input type="number" class="form-control" id="elemento24" @bind="matriz[2, 4]" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 3 -->
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento30">Elemento [3,0]</label>
+                <input type="number" class="form-control" id="elemento30" @bind="matriz[3, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento31">Elemento [3,1]</label>
+                <input type="number" class="form-control" id="elemento31" @bind="matriz[3, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento32">Elemento [3,2]</label>
+                <input type="number" class="form-control" id="elemento32" @bind="matriz[3, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento33">Elemento [3,3]</label>
+                <input type="number" class="form-control" id="elemento33" @bind="matriz[3, 3]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento34">Elemento [3,4]</label>
+                <input type="number" class="form-control" id="elemento34" @bind="matriz[3, 4]" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 4 -->
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento40">Elemento [4,0]</label>
+                <input type="number" class="form-control" id="elemento40" @bind="matriz[4, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento41">Elemento [4,1]</label>
+                <input type="number" class="form-control" id="elemento41" @bind="matriz[4, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento42">Elemento [4,2]</label>
+                <input type="number" class="form-control" id="elemento42" @bind="matriz[4, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento43">Elemento [4,3]</label>
+                <input type="number" class="form-control" id="elemento43" @bind="matriz[4, 3]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento44">Elemento [4,4]</label>
+                <input type="number" class="form-control" id="elemento44" @bind="matriz[4, 4]" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="form-group">
+        <button class="btn btn-primary" @onclick="CalcularValorMasRepetido">Calcular</button>
+    </div>
+
+    <p>El número que más se repite es @numeroMasRepetido y se repite @frecuenciaMaxima veces.</p>
+
+    <button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+</div>
+
+
+@code {
+    private int[,] matriz = new int[5, 5];
+    private int numeroMasRepetido = 0;
+    private int frecuenciaMaxima = 0;
+    private void CalcularValorMasRepetido()
+    {
+        Dictionary<int, int> contador = new Dictionary<int, int>();
+
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                int valor = matriz[i, j];
+                if (contador.ContainsKey(valor))
+                {
+                    contador[valor]++;
+                }
+                else
+                {
+                    contador[valor] = 1;
+                }
+            }
+        }
+
+        foreach (var kvp in contador)
+        {
+            if (kvp.Value > frecuenciaMaxima)
+            {
+                frecuenciaMaxima = kvp.Value;
+                numeroMasRepetido = kvp.Key;
+            }
+        }
+    }
+
+    private void Regresar()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

@@ -1,0 +1,12 @@
+.digitos[b-kgcmensdsz] {
+    font-size: 15px;
+    margin-bottom: 10px; /* Aumenta el tamaño de la fuente */
+}
+
+.calcular-btn[b-kgcmensdsz] {
+    margin-top: 10px; /* Agrega espacio entre el input y el botón */
+}
+
+.form-group[b-kgcmensdsz] {
+    margin-bottom: 1rem; /* Aumenta el espacio entre los elementos del formulario */
+}

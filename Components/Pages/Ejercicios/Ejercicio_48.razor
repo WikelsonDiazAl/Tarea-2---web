@@ -1,0 +1,170 @@
+@page "/Ejercicio_48"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<div class="container">
+    <h3>Ejercicio 48</h3>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento00">Elemento [0,0]</label>
+                <input type="number" class="form-control" id="elemento00" @bind="matriz[0, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento01">Elemento [0,1]</label>
+                <input type="number" class="form-control" id="elemento01" @bind="matriz[0, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento02">Elemento [0,2]</label>
+                <input type="number" class="form-control" id="elemento02" @bind="matriz[0, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento03">Elemento [0,3]</label>
+                <input type="number" class="form-control" id="elemento03" @bind="matriz[0, 3]" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento10">Elemento [1,0]</label>
+                <input type="number" class="form-control" id="elemento10" @bind="matriz[1, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento11">Elemento [1,1]</label>
+                <input type="number" class="form-control" id="elemento11" @bind="matriz[1, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento12">Elemento [1,2]</label>
+                <input type="number" class="form-control" id="elemento12" @bind="matriz[1, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento13">Elemento [1,3]</label>
+                <input type="number" class="form-control" id="elemento13" @bind="matriz[1, 3]" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento20">Elemento [2,0]</label>
+                <input type="number" class="form-control" id="elemento20" @bind="matriz[2, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento21">Elemento [2,1]</label>
+                <input type="number" class="form-control" id="elemento21" @bind="matriz[2, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento22">Elemento [2,2]</label>
+                <input type="number" class="form-control" id="elemento22" @bind="matriz[2, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento23">Elemento [2,3]</label>
+                <input type="number" class="form-control" id="elemento23" @bind="matriz[2, 3]" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento30">Elemento [3,0]</label>
+                <input type="number" class="form-control" id="elemento30" @bind="matriz[3, 0]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento31">Elemento [3,1]</label>
+                <input type="number" class="form-control" id="elemento31" @bind="matriz[3, 1]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento32">Elemento [3,2]</label>
+                <input type="number" class="form-control" id="elemento32" @bind="matriz[3, 2]" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="elemento33">Elemento [3,3]</label>
+                <input type="number" class="form-control" id="elemento33" @bind="matriz[3, 3]" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" @onclick="BuscarPosicionMayorPrimo">Buscar Posición del Mayor Primo</button>
+    </div>
+
+    <p>@resultado</p>
+    <button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+</div>
+
+@code {
+    private int[,] matriz = new int[4, 4];
+    private string resultado;
+
+    private bool EsPrimo(int numero)
+    {
+        if (numero <= 1) return false;
+        for (int i = 2; i <= Math.Sqrt(numero); i++)
+        {
+            if (numero % i == 0) return false;
+        }
+        return true;
+    }
+
+    private void BuscarPosicionMayorPrimo()
+    {
+        int mayorPrimo = int.MinValue;
+        int filaMayorPrimo = -1;
+        int columnaMayorPrimo = -1;
+
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                if (EsPrimo(matriz[i, j]) && matriz[i, j] > mayorPrimo)
+                {
+                    mayorPrimo = matriz[i, j];
+                    filaMayorPrimo = i;
+                    columnaMayorPrimo = j;
+                }
+            }
+        }
+
+        if (filaMayorPrimo != -1 && columnaMayorPrimo != -1)
+        {
+            resultado = $"El mayor número primo es {mayorPrimo} y se encuentra en la posición [{filaMayorPrimo},{columnaMayorPrimo}].";
+        }
+        else
+        {
+            resultado = "No se encontró ningún número primo en la matriz.";
+        }
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

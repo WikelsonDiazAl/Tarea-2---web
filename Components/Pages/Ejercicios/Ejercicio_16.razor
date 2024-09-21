@@ -1,0 +1,30 @@
+@page "/Ejercicio_16"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h2>Ejercicio 16</h2>
+<p>Construir una función que reciba como parámetro un entero y retorne 1 si corresponde al código ASCII de una letra minúscula.</p>
+
+<input type="number" @bind="codigoAscii" placeholder="Ingresa un código ASCII" />
+<button class="btn btn-primary" @onclick="VerificarAscii">Verificar</button>
+<p>Resultado: @resultado</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private int codigoAscii;
+    private int resultado;
+
+    private void VerificarAscii()
+    {
+        resultado = EsLetraMinuscula(codigoAscii);
+    }
+
+    private int EsLetraMinuscula(int codigo)
+    {
+        return (codigo >= 97 && codigo <= 122) ? 1 : 0;
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

@@ -1,0 +1,32 @@
+@page "/Ejercicio_2"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h3>Ejercicio 2</h3>
+
+
+
+<div class="form-group">
+    <label for="txtnumero">Ingresa un número:</label>
+    <input type="number" class="form-control" id="txtnumero" @bind="numero" />
+</div>
+
+<div class="form-group">
+    <button class="btn btn-primary calcular-btn" @onclick="Calcular">Calcular</button>
+    <p class="digitos">Últimos dos dígitos: @ultimoDigitos</p>
+    <button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+</div>
+
+@code{
+    private int numero = 0;
+    private string ultimoDigitos = "";
+
+    private void Calcular(){
+        int ultimoDosDigitos = numero % 100;
+        ultimoDigitos = ultimoDosDigitos.ToString("D2");
+    }
+
+    private void Regresar(){
+        Navigation.NavigateTo("/");
+    }
+}

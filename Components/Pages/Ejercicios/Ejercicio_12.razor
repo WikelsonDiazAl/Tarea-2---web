@@ -1,0 +1,33 @@
+@page "/Ejercicio_12"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h2>Ejercicio 12</h2>
+<p>Construir una función que reciba como parámetro un entero y un dígito y retorne 1 si dicho dígito está en dicho entero, y 0 si no es así.</p>
+
+<input type="number" @bind="numero" placeholder="Ingresa un número" />
+<input type="number" @bind="digito" placeholder="Ingresa un dígito" />
+<button class="btn btn-primary" @onclick="VerificarDigito">Verificar Dígito</button>
+<p>Resultado: @resultado</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private int numero;
+    private int digito;
+    private int resultado;
+
+    private void VerificarDigito()
+    {
+        resultado = DigitoEnNumero(numero, digito);
+    }
+
+    private int DigitoEnNumero(int num, int dig)
+    {
+        
+        return num.ToString().Contains(dig.ToString()) ? 1 : 0;
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

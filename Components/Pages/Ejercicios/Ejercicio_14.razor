@@ -1,0 +1,32 @@
+@page "/Ejercicio_14"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h2>Ejercicio 14</h2>
+<p>Construir una función que reciba como parámetros dos números enteros y retorne el valor mayor.</p>
+
+<input type="number" @bind="numero1" placeholder="Ingresa el primer número" />
+<input type="number" @bind="numero2" placeholder="Ingresa el segundo número" />
+<button class="btn btn-primary" @onclick="EncontrarMayor">Encontrar Mayor</button>
+<p>El mayor es: @mayor</p>
+<button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+
+@code {
+    private int numero1;
+    private int numero2;
+    private int mayor;
+
+    private void EncontrarMayor()
+    {
+        mayor = ObtenerMayor(numero1, numero2);
+    }
+
+    private int ObtenerMayor(int num1, int num2)
+    {
+        return num1 > num2 ? num1 : num2;
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}

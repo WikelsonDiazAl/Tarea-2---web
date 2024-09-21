@@ -1,0 +1,13 @@
+/* styles.css */
+.titulo-digitos {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.calcular-btn {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}

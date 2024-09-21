@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = tarea2
+build_property.RootNamespace = tarea2
+build_property.ProjectDir = C:\Users\WIKELSON\web\tarea2\tarea2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\WIKELSON\web\tarea2\tarea2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Acerca_de.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2VyY2FfZGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_10.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18xMC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_12.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18xMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_14.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18xNC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_16.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18xNi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_18.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18xOC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_20.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18yMC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_22.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18yMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_24.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18yNC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_26.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18yNi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_28.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18yOC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_30.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18zMC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_32.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18zMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_34.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18zNC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_36.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18zNi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_38.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18zOC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_40.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb180MC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_42.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb180Mi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_44.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb180NC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_46.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb180Ni5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_48.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb180OC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_50.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb181MC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ttvj377xiy
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ax0n9l8l0x
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Layout/Tarea2Layout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVGFyZWEyTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-5mt19m6bh1
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb18yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-kgcmensdsz
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_4.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb180LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-hmcjy7mfey
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_6.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb182LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-1e41qmyht2
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Ejercicios/Ejercicio_8.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjaWNpb184LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-37v6ks1drv
+
+[C:/Users/WIKELSON/web/tarea2/tarea2/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-6nrxm65169

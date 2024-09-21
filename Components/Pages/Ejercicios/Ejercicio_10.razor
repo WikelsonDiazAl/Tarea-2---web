@@ -1,0 +1,34 @@
+@page "/Ejercicio_10"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<h2>Ejercicio 10</h2>
+<p>Construir una función que reciba como parámetro un entero y retorne el primer dígito de este entero.</p>
+
+<input type="number" @bind="numero" placeholder="Ingresa un número" />
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="ObtenerPrimerDigito">Obtener Primer Dígito</button>
+    <p>Primer dígito: @primerDigito</p>
+    <button class="btn btn-secondary" @onclick="Regresar">Regresar</button>
+</div>
+
+
+@code {
+    private int numero;
+    private int primerDigito;
+
+    private void ObtenerPrimerDigito()
+    {
+        primerDigito = ObtenerPrimerDigitoDeNumero(numero);
+    }
+
+    private int ObtenerPrimerDigitoDeNumero(int num)
+    {
+         string numStr = num.ToString(); 
+        return int.Parse(numStr[0].ToString());
+    }
+
+    private void Regresar() {
+        Navigation.NavigateTo("/");
+    }
+}
